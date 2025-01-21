@@ -1,0 +1,13 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+
+public class Meow {
+  public static void main(String[] args) {
+    
+    LocalDate myObj = LocalDate.now();
+    LocalTime myObJ = LocalTime.now();
+    System.out.println("Hello World! My name's Paul Lorrence R. Abonado");
+    System.out.println("The date is " + myObj);
+    System.out.println("The time is " + myObJ);
+  }
+}
