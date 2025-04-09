@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        // Default constructor
+        Book book1 = new Book();
+        System.out.println("Book created using Default Constructor:");
+        book1.displayBook();
+        
+        // Parameterized constructor
+        Book book2 = new Book("The 39 Clues, Book 1, The Maze of Bones", "Rick Riordan", 12.99);
+        System.out.println("Book created using Parameterized Constructor:");
+        book2.displayBook();
+        
+        // Copy constructor
+        Book book3 = new Book(book2);
+        System.out.println("Book created using Copy Constructor:");
+        book3.displayBook();
+    }
+}
