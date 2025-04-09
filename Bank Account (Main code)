@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+ 
+        // Creating an account
+        BankAccount myAccount = new BankAccount("John Doe", 123456, 5000.0);
+        myAccount.displayBalance();
+ 
+        // Performing deposit
+        System.out.print("\nEnter deposit amount: ");
+        double depositAmount = scanner.nextDouble();
+        myAccount.deposit(depositAmount);
+ 
+        // Performing withdrawal
+        System.out.print("\nEnter withdrawal amount: ");
+        double withdrawAmount = scanner.nextDouble();
+        myAccount.withdraw(withdrawAmount);
+ 
+        myAccount.displayBalance();
+        
+        // Close the scanner to prevent resource leak
+        scanner.close();
+    }
+}
